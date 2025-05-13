@@ -25,7 +25,7 @@ resource "aws_instance" "app_server" {
 curl -sL https://rpm.nodesource.com/setup_16.x | bash -
     yum install -y nodejs
 git clone https://github.com/jAnushka26/jenkins-pipeline-2.0.git
-    cd your-repo
+    cd node_app
     node index.js
   EOF
  
