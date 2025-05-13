@@ -15,6 +15,6 @@ node -v
 npm -v
  
 # Clone your repository and start the application
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/jAnushka26/jenkins-pipeline-2.0.git
+cd node_app
 node index.js
