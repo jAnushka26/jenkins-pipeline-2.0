@@ -12,9 +12,9 @@ sudo yum install -y git
 # sudo npm install express -y
  
 # Verify installations
-git --version
-node -v
-npm -v
+# git --version
+# node -v
+# npm -v
  
 # Clone your repository and start the application
 sudo git clone https://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@github.com/jAnushka26/jenkins-pipeline-2.0.git
