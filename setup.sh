@@ -21,5 +21,5 @@ sudo git clone https://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@github.com/jAnus
 sudo cd jenkins-pipeline-2.0
 sudo cd node_app
 sudo yum install nodejs -y
-sudo npm install express
-sudo node index.js
+npm install express
+node index.js
