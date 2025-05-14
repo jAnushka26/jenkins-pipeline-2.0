@@ -18,6 +18,8 @@ sudo yum install -y git
  
 # Clone your repository and start the application
 sudo git clone https://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@github.com/jAnushka26/jenkins-pipeline-2.0.git
+sudo cd ..
+sudo cd ..
 sudo cd jenkins-pipeline-2.0
 sudo cd node_app
 sudo yum install nodejs -y
