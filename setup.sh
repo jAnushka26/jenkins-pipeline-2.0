@@ -6,10 +6,9 @@ sudo yum update -y
 sudo yum install -y git
  
 # Install Node.js (LTS version)
-# curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
-# sudo yum install -y nodejs
-# sudo yum install nodejs -y
-# sudo npm install express -y
+curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
+sudo yum install -y nodejs
+sudo npm install -g express
  
 # Verify installations
 # git --version
@@ -22,6 +21,4 @@ sudo cd ..
 sudo cd ..
 sudo cd jenkins-pipeline-2.0
 sudo cd node_app
-sudo yum install nodejs -y
-sudo npm install express
 sudo node index.js
