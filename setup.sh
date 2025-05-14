@@ -23,5 +23,5 @@ sudo cd ..
 sudo cd jenkins-pipeline-2.0
 sudo cd node_app
 sudo yum install nodejs -y
-npm install express
-node index.js
+sudo npm install express
+sudo node index.js
