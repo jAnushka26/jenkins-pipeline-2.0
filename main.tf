@@ -45,28 +45,14 @@ resource "aws_instance" "app_server" {
       # Install Node.js (LTS version)
       curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
       sudo yum install -y nodejs
-      sudo npm install -g express
-
-#DOCKER INSTALLATION
-      yum install -y docker git
- 
-      service docker start
-      usermod -a -G docker ec2-user
-      chkconfig docker on
-       
-      cd /home/ec2-user
-      git clone https://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@github.com/jAnushka26/jenkins-pipeline-2.0.git
-      cd app
-       
-      docker build -t node_app .
-      docker run -d -p 3000:3000 node_app
+      sudo npm install express
 
       # Clone your repository and start the application
-      # sudo git clone https://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@github.com/jAnushka26/jenkins-pipeline-2.0.git
-      # sudo cd /
-      # sudo cd jenkins-pipeline-2.0
-      # sudo cd node_app
-      # sudo node index.js
+      sudo git clone https://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@github.com/jAnushka26/jenkins-pipeline-2.0.git
+      sudo cd /
+      sudo cd jenkins-pipeline-2.0
+      sudo cd node_app
+      sudo node index.js
 
   EOF
 
