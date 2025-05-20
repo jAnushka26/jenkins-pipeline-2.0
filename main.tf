@@ -45,6 +45,7 @@ resource "aws_instance" "app_server" {
       # Install Node.js (LTS version)
       curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
       sudo yum install -y nodejs
+      sudo npm init -y
       sudo npm install express
 
       # Clone your repository and start the application
