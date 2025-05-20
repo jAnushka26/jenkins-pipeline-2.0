@@ -10,9 +10,9 @@ terraform {
   }
 }
 
-resource "aws_security_group" "allow_http" {
+resource "aws_security_group" "allow_http-ec2-instance" {
  
-  name = "allow_http"
+  name = "allow_http-ec2-instance"
   ingress {
     from_port = 0
     to_port = 0
@@ -32,8 +32,8 @@ resource "aws_instance" "app_server" {
   ami           = "ami-0953476d60561c955" # Amazon Linux 2
   instance_type = "t2.micro"
 
-  depends_on = [ aws_security_group.allow_http ]
-  security_groups = [ "allow_http" ]
+  depends_on = [ aws_security_group.allow_http-ec2-instance ]
+  security_groups = [ "allow_http-ec2-instance" ]
 
   user_data = <<-EOF
       #!/bin/bash
